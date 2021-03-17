@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <!--nav bar start-->
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
+    </nav> 
+    <!--nav bar end-->     
+
+    <!--main page start-->   
+    <div class="container">
+        <div class="row">
+            <!--cities search section start-->
+            <div class="col-12 col-md-4 bg-light">
+                <!--search field-->
+                <div>
+                    <form id="user-form" class="card-body">
+                        <label class="search-header form-label" for="username">Search for a City:</label>
+                        <br>
+                        <input name="city" id="city-input" type="text" autofocus="true" class="form-input form-control"/>
+                        <button type="submit" class="btn btn-primary" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <div >
+
+                    </div>
+                </div>
+
+                <!--list field-->
+                <div id="city-history" class="city-history d-flex flex-column mb-1">
+
+                </div>
+            </div>
+            <!--cities search section end-->
+
+            <!--current/future city conditions start-->
+            <div class="col-12 col-md-8">
+                <!--current city conditions-->
+                <div class="row">
+                    <div class="col-12 border border-dark m-3 rounded">
+                        <div class="row" >
+                            <div class="col-12 d-flex flex-row">
+                                <span id="city-name" class="city-name align-middle"></span>
+                                <span id="current-date" class="current-date align-middle ml-2"></span>
+                                <span id="weather-icon"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="temperature"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="humidity"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="wind-speed"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <p id="uv-index"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--5 dayforect-->
+                <div class="row">
+                    <div class="col-12">
+                        <h3>5-Day Forecast</h3>
+                    </div>
+                </div>
+                <div class="card-row">
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="row mr-0">
+                
+                </div>
+        
+            <!--current/future city conditions end-->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
