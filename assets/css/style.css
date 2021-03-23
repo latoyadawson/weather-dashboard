@@ -1,0 +1,28 @@
+.five-day-card {
+    margin: 4px;
+
+}
+
+.search-section {
+    padding: 10px;
+    
+    
+}
+
+.history-button  {
+    padding-left: 10px;
+}
+
+
+.card-date {
+    font-size: 15px;
+}
+.card-text {
+    font-size: 12px;
+}
+.current-city {
+    border: 5px;
+    border-radius: 30px;
+    border-color: grey;
+   
+}

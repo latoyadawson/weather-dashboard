@@ -17,15 +17,15 @@
     <!--nav bar end-->     
 
     <!--main page start-->   
-    <div class="container">
-        <div class="row">
+    <div class="container" id="weather-container">
+        <div class="row d-flex flex-row">
             <!--cities search section start-->
-            <div class="col-12 col-md-4 bg-light">
+            <div class="col-12 col-md-4 bg-light search-section">
                 <!--search field-->
                 <div>
-                    <form id="user-form" class="card-body">
-                        <label class="search-header form-label" for="username">Search for a City:</label>
+                    <label class="search-header form-label mt-3" for="username">Search for a City:</label>
                         <br>
+                    <form id="user-form" class="card-body d-flex flex-row">
                         <input name="city" id="city-input" type="text" autofocus="true" class="form-input form-control"/>
                         <button type="submit" class="btn btn-primary" id="search-button">
                             <i class="fas fa-search"></i>
@@ -44,10 +44,10 @@
             <!--cities search section end-->
 
             <!--current/future city conditions start-->
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8" id="current-weather-cont">
                 <!--current city conditions-->
                 <div class="row">
-                    <div class="col-12 border border-dark m-3 rounded">
+                    <div class="col-12 border border-secondary m-3 rounded">
                         <div class="row" >
                             <div class="col-12 d-flex flex-row">
                                 <span id="city-name" class="city-name align-middle"></span>
@@ -77,20 +77,18 @@
                         </div>
                     </div>
                 </div>
-                <!--5 dayforect-->
+                <!--5 dayforecast start-->
                 <div class="row">
-                    <div class="col-12">
-                        <h3>5-Day Forecast</h3>
+                    <div class="col-12" id="five-title">
+                        <h3>5-Day Forecast: </h3>
+                        <!-- <h3>5-Day Forecast</h3> -->
+                        <div class="row d-flex justify space between ml-3 mr-3" id="card-row">
+                        </div>
                     </div>
                 </div>
-                <div class="card-row">
-                </div>
-            </div>
-
-            <div class="col-8">
-                <div class="row mr-0">
+                <!--5 dayforecast end-->
                 
-                </div>
+            </div>
         
             <!--current/future city conditions end-->
         </div>

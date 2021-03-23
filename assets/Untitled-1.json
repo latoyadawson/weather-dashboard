@@ -1,0 +1,52 @@
+
+
+[
+    {
+        "city": "city",
+        "date": "date",
+        "icon": "http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png",
+        "windSpeed": "data.wind.speed",
+        "humidty": "data.main.humidity",
+        "cityTemparture": "data.main.temp",
+        "fiveDayForecast": [
+            {
+                "Date": "",
+                "icon": "https:///openweathermap.org/img/w/${cityObj.icon}.png",
+                "humidty": 0,
+                "tempature": 0.0
+            }
+        ]
+    },
+    {
+        "city": "city",
+        "date": "date",
+        "icon": "http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png",
+        "windSpeed": "data.wind.speed",
+        "humidty": "data.main.humidity",
+        "cityTemparture": "data.main.temp",
+        "fiveDayForecast": [
+            {
+                "Date": "",
+                "icon": "https:///openweathermap.org/img/w/${cityObj.icon}.png",
+                "humidty": 0,
+                "tempature": 0.0
+            }
+        ]
+    },
+    {
+        "city": "city",
+        "date": "date",
+        "icon": "http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png",
+        "windSpeed": "data.wind.speed",
+        "humidty": "data.main.humidity",
+        "cityTemparture": "data.main.temp",
+        "fiveDayForecast": [
+            {
+                "Date": "",
+                "icon": "https:///openweathermap.org/img/w/${cityObj.icon}.png",
+                "humidty": 0,
+                "tempature": 0.0
+            }
+        ]
+    }
+]
