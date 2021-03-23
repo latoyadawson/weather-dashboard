@@ -11,7 +11,7 @@ This is a weather daboard that retrieves weather data for cities from a server s
 * This web application uses third party api's such as Moment.js, Bootstrap, and Font Awesome. 
 
 ## Screenshot
-![screenshot of startpage](/assets/images/UI.png)
+![startpage](/assets/Images/UI.png)
 
 
 ## User Story
